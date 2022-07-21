@@ -1,0 +1,32 @@
+:root {
+    /* --while-color: #fff; */
+    /* --black-color: #000; */
+    /* --text-color: #333; */
+    /* --primary-color: #ee4b2b; */
+    /* --border-color: #dbdbdb; */
+    /* --start-gold-color: #ffce3e; */
+    /* --header-height: 120px; */
+    /* --navbar-height: 34px; */
+    /* --header-with-search-height: calc(var(--header-height) - var(--navbar-height)); */
+    /* --header-sort-bar-height: 46px; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* RESPONSIVE */
+

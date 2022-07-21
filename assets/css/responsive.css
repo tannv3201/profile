@@ -1,0 +1,46 @@
+/* Mobile & Tablet */
+@media (max-width:1023px) {
+    
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+
+}
+
+/*  Tablet */
+@media (min-width:740px) and (max-width:1023px) {
+
+    :root {
+    }
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    
+}
+
+/*  Mobile */
+@media (max-width:739px)  {
+    :root {
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+
+    @keyframes mobileSearchSideIn {
+        from{
+            opacity: 0;
+            height: 0;
+        }
+        to{
+           opacity: 1;
+           height: 46px;
+        }
+    }
+
+}
