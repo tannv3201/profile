@@ -16,7 +16,11 @@
 
 <body>
     <div class="main">
-        <div class="sidebar">
+
+
+
+        <!-- Navbar PC -->
+        <div class="sidebar hide-on-mobile-tablet">
             <div class="personal__info">
                 <img src="./assets/img/add.jpg" alt="" class="personal__info-img">
                 <p class="personal__info-name">NGUYEN VAN TAN</p>
@@ -75,47 +79,127 @@
         </div>
 
         <div class="content">
-            <div class="header__content">
-                <p class="header__content-title">
-                    My Portfolio
-                </p>
-                <div class="header__content-filter">
-                    <p class="filter__title">
-                        Filter:
-                    </p>
 
-                    <ul class="filter__list">
-                        <li class="filter__list-item">
-                            <button class="filter__item-btn filter__item-btn--active">
-                                ALL
-                            </button>
-                        </li>
-                        <li class="filter__list-item">
-                            <button class="filter__item-btn">
-                                <i class="fa-regular fa-gem"></i>
-                                Design
-                            </button>
-                        </li>
-                        <li class="filter__list-item">
-                            <button class="filter__item-btn">
-                                <i class="fa-regular fa-image"></i>
-                                Photos
-                            </button>
-                        </li>
-                        <li class="filter__list-item">
-                            <button class="filter__item-btn">
-                                <i class="fa-solid fa-paintbrush"></i>
-                                Art
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="grid">
+
+                <div class="header__content">
+                    <input hidden type="checkbox" class="nav__input" id="nav-mobile-input">
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+                    <!-- Sidebar Mobile-tablet -->
+
+                    <div class="nav__mobile-tablet hide-on-pc">
+                        <div class="header__navbar">
+                            <div class="personal__info">
+                                <img src="./assets/img/add.jpg" alt="" class="personal__info-img">
+                                <p class="personal__info-name">NGUYEN VAN TAN</p>
+                            </div>
+                            <label for="nav-mobile-input" class="nav__mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                        </div>
+
+                        <div class="sidebar__menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a href="" class="menu__item-link menu__item-link--active">
+                                        <i class="fa-solid fa-rectangle-list"></i>
+                                        PORTFOLIO
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="" class="menu__item-link">
+                                        <i class="fa-solid fa-user"></i>
+                                        ABOUT
+                                    </a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="" class="menu__item-link">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        CONTACT
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar__social">
+                            <ul class="sidebar__social-list">
+                                <li class="sidebar__social-item">
+                                    <a href="" class="social-item__link">
+                                        <i class="fa-brands fa-facebook social-item__icon"></i>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar__social-item">
+                                    <a href="" class="social-item__link">
+                                        <i class="fa-brands fa-instagram social-item__icon"></i>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar__social-item">
+                                    <a href="" class="social-item__link">
+                                        <i class="fa-brands fa-telegram social-item__icon"></i>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar__social-item">
+                                    <a href="" class="social-item__link">
+                                        <i class="fa-brands fa-twitter social-item__icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- header mobile-tablet -->
+                    <div class="header__mobile-tablet hide-on-pc">
+                        <label for="nav-mobile-input" class="nav__bar-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <img src="./assets/img/add.jpg" alt="" class="navbar__img-user">
+                    </div>
+                    <div class="row sm-gutter">
+                        <div class="col l-12 m-12 c-12">
+                            <p class="header__content-title">
+                                My Portfolio
+                            </p>
+                            <div class="header__content-filter">
+                                <p class="filter__title">
+                                    Filter:
+                                </p>
+
+                                <ul class="filter__list">
+                                    <li class="filter__list-item">
+                                        <button class="filter__item-btn filter__item-btn--active">
+                                            ALL
+                                        </button>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <button class="filter__item-btn">
+                                            <i class="fa-regular fa-gem"></i>
+                                            Design
+                                        </button>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <button class="filter__item-btn">
+                                            <i class="fa-regular fa-image"></i>
+                                            Photos
+                                        </button>
+                                    </li>
+                                    <li class="filter__list-item">
+                                        <button class="filter__item-btn">
+                                            <i class="fa-solid fa-paintbrush"></i>
+                                            Art
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- List portfolio -->
                 <div class="content__portfolio">
                     <div class="row sm-gutter">
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -128,7 +212,7 @@
                             </a>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -141,7 +225,7 @@
                             </a>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -154,7 +238,7 @@
                             </a>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -167,7 +251,7 @@
                             </a>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -180,7 +264,7 @@
                             </a>
                         </div>
 
-                        <div class="col l-4">
+                        <div class="col l-4 m-6 c-12">
                             <a href="" class="content__portfolio-item">
                                 <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio-item__img">
                                 <div class="portfolio-item__text">
@@ -236,13 +320,13 @@
                 <div class="content__profile">
                     <div class="content-profile__about-me">
                         <div class="row sm-gutter">
-                            <div class="col l-6 about-me__img">
+                            <div class="col l-6 m-6 c-12 about-me__img">
                                 <img src="./assets/img/add.jpg" alt="">
                             </div>
-                            <div class="col l-6 about-me__img">
+                            <div class="col l-6 m-6 c-12 about-me__img">
                                 <img src="./assets/img/add.jpg" alt="">
                             </div>
-                            <div class="col l-12 about-me__text">
+                            <div class="col l-12 m-12 c-12 about-me__text">
                                 <p class="about-me__text-title">
                                     About me
                                 </p>
@@ -260,7 +344,7 @@
                     <hr>
                     <div class="content-profile__skills">
                         <div class="row sm-gutter">
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <p class="profile-skills__title">
                                     Technical Skills
                                 </p>
@@ -310,11 +394,11 @@
                     <!-- Service  option -->
                     <div class="content-profile__service">
                         <div class="row sm-gutter">
-                            <p class="col l-12 profile-service__title">
+                            <p class="col l-12 m-12 c-12 profile-service__title">
                                 How much I charge
                             </p>
 
-                            <div class="col l-4 sm-gutter list__option">
+                            <div class="col l-4 m-4 c-12 sm-gutter list__option">
                                 <div class="profile-service__option">
                                     <div class="service-option__name">
                                         <p>Basic</p>
@@ -344,10 +428,10 @@
                                 </div>
                             </div>
 
-                            <div class="col l-4 sm-gutter list__option">
+                            <div class="col l-4 m-4 c-12 sm-gutter list__option">
                                 <div class="profile-service__option">
                                     <div class="service-option__name">
-                                        <p>Basic</p>
+                                        <p>Pro</p>
                                     </div>
                                     <ul class="option__service-list">
                                         <li class="option__service-item">
@@ -357,13 +441,13 @@
                                             <p>Photography</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p>1GB Storage</p>
+                                            <p>50GB Storage</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p>Mail Support</p>
+                                            <p>Endless Support</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p class="option-price">$ 10</p>
+                                            <p class="option-price">$ 20</p>
                                             <span>per month</span>
                                         </li>
                                     </ul>
@@ -374,10 +458,10 @@
                                 </div>
                             </div>
 
-                            <div class="col l-4 sm-gutter list__option">
+                            <div class="col l-4 m-4 c-12 sm-gutter list__option">
                                 <div class="profile-service__option">
                                     <div class="service-option__name">
-                                        <p>Basic</p>
+                                        <p>Premium</p>
                                     </div>
                                     <ul class="option__service-list">
                                         <li class="option__service-item">
@@ -387,13 +471,13 @@
                                             <p>Photography</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p>1GB Storage</p>
+                                            <p>Unlimited Storage</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p>Mail Support</p>
+                                            <p>Endless Support</p>
                                         </li>
                                         <li class="option__service-item">
-                                            <p class="option-price">$ 10</p>
+                                            <p class="option-price">$ 25</p>
                                             <span>per month</span>
                                         </li>
                                     </ul>
@@ -414,10 +498,10 @@
                 <!-- Contact -->
                 <div class="content__contact">
                     <div class="row no-gutters">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 c-12">
                             <p class="contact__title">Contact Me</p>
                         </div>
-                        <div class="col l-4 contact__item-col">
+                        <div class="col l-4 m-4 c-12 contact__item-col">
                             <div class="contact__item">
                                 <i class="fa-solid fa-envelope contact-item__icon"></i>
                                 <p class="contact-item__name">
@@ -426,7 +510,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-4 contact__item-col">
+                        <div class="col l-4 m-4 c-12 contact__item-col">
                             <div class="contact__item">
                                 <i class="fa-solid fa-location-dot contact-item__icon"></i>
                                 <p class="contact-item__name">
@@ -435,7 +519,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-4 contact__item-col">
+                        <div class="col l-4 m-4 c-12 contact__item-col">
                             <div class="contact__item">
                                 <i class="fa-solid fa-phone contact-item__icon"></i>
                                 <p class="contact-item__name">
@@ -445,133 +529,151 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="contact__form">
+                    <form action="" class="contact__form">
                         <div class="row">
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="contact-form__item">
                                     <label class="form__label" for="input__name">Name</label>
-                                    <input type="text" class="form__input" id="input__name">
+                                    <input type="text" class="form__input" id="input__name" required>
                                 </div>
                             </div>
 
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="contact-form__item">
                                     <label class="form__label" for="input__email">E-mail</label>
-                                    <input type="text" class="form__input" id="input__email">
+                                    <input type="email" class="form__input" id="input__email" required>
                                 </div>
                             </div>
 
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="contact-form__item">
                                     <label class="form__label" for="input__message">Message</label>
-                                    <input type="text" class="form__input" id="input__message">
+                                    <input type="text" class="form__input" id="input__message" required>
                                 </div>
                             </div>
                         </div>
-                        <button class="contact__btn-send">
+
+                        <button class="contact__btn-send" type="submit">
                             <i class="fa-solid fa-paper-plane contact__btn-icon"></i>
                             Send Message
                         </button>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Footer -->
                 <footer class="footer">
                     <div class="row sm-gutter">
-                        <div class="col l-4">
-                            <div class="footer__heading">
-                                <p class="footer-heading__text">THANKS</p>
-                            </div>
-
-                            <div class="footer__body">
-                                <p class="footer-body__text">
-                                    Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
-                                    vitae, ultricies congue gravida diam non fringilla.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col l-4">
-                            <div class="footer__heading">
-                                <p class="footer-heading__text">BLOG POSTS</p>
-                            </div>
-
-                            <div class="footer__body">
-                                <ul class="footer-body__list">
-                                    <li class="footer-body__item">
-                                        <img src="./assets/img/footeritem1.jpg" alt="" class="footer-body__item-img">
-                                        <div class="footer-body__item-text">
-                                            <p class="footer-body__item-name">Lorem</p>
-                                            <p class="footer-body__item-desc">Sed mattis nunc</p>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                    <li class="footer-body__item">
-                                        <img src="./assets/img/footeritem1.jpg" alt="" class="footer-body__item-img">
-                                        <div class="footer-body__item-text">
-                                            <p class="footer-body__item-name">Lorem</p>
-                                            <p class="footer-body__item-desc">Sed mattis nunc</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="footer__item">
+                                <div class="footer__heading">
+                                    <p class="footer-heading__text">THANKS</p>
+                                </div>
+    
+                                <div class="footer__body">
+                                    <p class="footer-body__text">
+                                        Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                                        vitae, ultricies congue gravida diam non fringilla.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col l-4">
-                            <div class="footer__heading">
-                                <p class="footer-heading__text">POPULAR TAGS</p>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="footer__item">
+                                <div class="footer__heading">
+                                    <p class="footer-heading__text">BLOG POSTS</p>
+                                </div>
+    
+                                <div class="footer__body">
+                                    <ul class="footer-body__list">
+                                        <li class="footer-body__item">
+                                            <img src="./assets/img/footeritem1.jpg" alt="" class="footer-body__item-img">
+                                            <div class="footer-body__item-text">
+                                                <p class="footer-body__item-name">Lorem</p>
+                                                <p class="footer-body__item-desc">Sed mattis nunc</p>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="footer-body__item">
+                                            <img src="./assets/img/footeritem1.jpg" alt="" class="footer-body__item-img">
+                                            <div class="footer-body__item-text">
+                                                <p class="footer-body__item-name">Lorem</p>
+                                                <p class="footer-body__item-desc">Sed mattis nunc</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
 
-                            <div class="footer__body">
-                                <ul class="footer-body__tag-list">
-                                    <li class="footer-body__tag-item footer-body__tag-item--active">
-                                        <a href="" class="footer-body__tag-link">Travel</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">New York</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">London</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="footer-body__tag-list">
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">NORWAY</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">DIY</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">Ideas</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="footer-body__tag-list">
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">Family</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">News</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">Clothing</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="footer-body__tag-list">
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">Sports</a>
-                                    </li>
-                                    <li class="footer-body__tag-item">
-                                        <a href="" class="footer-body__tag-link">Games</a>
-                                    </li>
-                                </ul>
-
+                        <div class="col l-4 m-4 c-12">
+                            <div class="footer__item">
+                                <div class="footer__heading">
+                                    <p class="footer-heading__text">POPULAR TAGS</p>
+                                </div>
+    
+                                <div class="footer__body">
+                                    <ul class="footer-body__tag-list">
+                                        <li class="footer-body__tag-item footer-body__tag-item--active">
+                                            <a href="" class="footer-body__tag-link">Travel</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">New York</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">London</a>
+                                        </li>
+                                    </ul>
+    
+                                    <ul class="footer-body__tag-list">
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">NORWAY</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">DIY</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">Ideas</a>
+                                        </li>
+                                    </ul>
+    
+                                    <ul class="footer-body__tag-list">
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">Family</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">News</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">Clothing</a>
+                                        </li>
+                                    </ul>
+    
+                                    <ul class="footer-body__tag-list">
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">Sports</a>
+                                        </li>
+                                        <li class="footer-body__tag-item">
+                                            <a href="" class="footer-body__tag-link">Games</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                 </footer>
+
+                <div class="copyright">
+                    <div class="row sm-gutter">
+                        <div class="col l-12 m-12 c-12">
+                            <p class="copyright__text">
+                                Powered by <a href="" class="copyright__author">NheoSoSweet</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

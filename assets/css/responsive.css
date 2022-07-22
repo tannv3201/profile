@@ -1,3 +1,11 @@
+/* PC */
+
+@media (min-width:1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
 /* Mobile & Tablet */
 @media (max-width:1023px) {
     
@@ -6,7 +14,137 @@
         display: none;
     }
 
+    .content {
+        width: 100%;
+    }
 
+    .content__pagination {
+        padding: 16px 22px;
+    }
+
+    .overlay-sidebar {
+        position: fixed;
+        top: 0;
+
+    }
+
+    .header__mobile-tablet {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar__img-user {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+
+    .nav__bar-btn {
+        font-size: 3rem;
+    }
+
+    .nav__overlay {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        animation: fadeIn linear 0.2s;
+    }
+
+    .nav__mobile-tablet {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 70%;
+        max-width: 100%;
+        padding: 32px 0;
+        background-color: #fff;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+    }
+
+    .nav__input:checked ~ .nav__overlay{
+        display: block;
+    }
+    
+    .nav__input:checked ~ .nav__mobile-tablet {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .header__navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__mobile-close i {
+        font-size: 2.5rem;
+        padding: 4px;
+        margin-right: 8px;
+    }
+  
+
+    .pagination__item-link  {
+        width: 36px;
+        height: 30px;
+        font-size: 1.8rem;
+        line-height: 30px
+    }
+
+    
+    .portfolio-item__name  {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-item__desc {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .about-me__text-title,
+    .profile-skills__title,
+    .contact__title{
+        font-size: 2.2rem;
+    }
+
+    .about-me__text-desc {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .profile-skills__item-name,
+    .option__btn-signup,
+    .option__service-item,
+    .profile-skills__item-name,
+    .profile-skills__btn-download,
+    .contact-item__name,
+    .form__label,
+    .footer-body__text,
+    .footer-body__item-desc,
+    .footer-body__tag-link,
+    .copyright__text  {
+        font-size: 1.6rem;
+    }
+
+    .profile-service__title {
+        font-size: 2.2rem;
+    }
+
+    .form__input {
+        height: 40px;
+    }
+
+    .footer-body__item-name{
+        font-size: 2rem;
+    }
 }
 
 /*  Tablet */
@@ -19,7 +157,27 @@
         display: none;
     }
 
+    .filter__item-btn {
+        font-size: 1.6rem;
+        margin-right: 8px;
+        background-color: #fff;
+        background-color: #fff;
+        border: none;
+        font-family: "Raleway", sans-serif;
+    }
     
+    .filter__item-btn--active {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .filter__title {
+        margin-right: 16px;
+        background-color: #ccc;
+        padding: 10px 20px;
+        font-size: 1.8rem;
+    }
+
 }
 
 /*  Mobile */
@@ -43,4 +201,68 @@
         }
     }
 
+    .filter__title {
+        padding: 12px 8px;
+        margin-right: 0;
+    }
+
+    .filter__item-btn {
+        padding: 12px 8px;
+        margin-left: 4px;
+
+    }
+
+    .header__content-filter {
+        justify-content: space-between;
+    }
+
+    .filter__title {
+        margin-right: 1px;
+        background-color: #ccc;
+        padding: 10px 6px;
+        font-size: 1.6rem;
+    }
+
+    .filter__item-btn {
+        padding: 10px 6px;
+        margin-left: 3px;
+        font-size: 1.5rem;
+    }
+    
+    .profile-service__option {
+        margin-bottom: 16px;    
+        box-shadow: 0 1px 2px #ccc;
+
+    }
+
+    .contact__btn-send {
+        font-size: 1.6rem;
+        padding: 15px 22px;
+        width: 100%;
+    }
+
+    .form__input {
+        height: 48px;
+    }
+
+    .option__btn-signup,
+    .profile-skills__btn-download {
+        font-size: 1.6rem;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .option-service__button {
+        padding: 6px;
+    }
+
+    .footer__item {
+        margin-bottom: 16px;
+    }
+
+    .footer-body__list hr {
+        border: none;
+        border-top: 1px solid #9e9e9e;
+        margin: 12px 0;
+    }
 }
